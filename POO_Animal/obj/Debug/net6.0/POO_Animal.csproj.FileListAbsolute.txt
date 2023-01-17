@@ -1,0 +1,5 @@
+C:\Users\marco\Desktop\ADA CS\Animal\POO_Animal\POO_Animal\obj\Debug\net6.0\POO_Animal.csproj.AssemblyReference.cache
+C:\Users\marco\Desktop\ADA CS\Animal\POO_Animal\POO_Animal\obj\Debug\net6.0\POO_Animal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco\Desktop\ADA CS\Animal\POO_Animal\POO_Animal\obj\Debug\net6.0\POO_Animal.AssemblyInfoInputs.cache
+C:\Users\marco\Desktop\ADA CS\Animal\POO_Animal\POO_Animal\obj\Debug\net6.0\POO_Animal.AssemblyInfo.cs
+C:\Users\marco\Desktop\ADA CS\Animal\POO_Animal\POO_Animal\obj\Debug\net6.0\POO_Animal.csproj.CoreCompileInputs.cache
