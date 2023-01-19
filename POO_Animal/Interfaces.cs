@@ -1,20 +1,25 @@
-﻿public interface IOviparo
+﻿interface IOviparo
 {
     void Botar();
     void Chocar();
-}
 
-public interface IVoar
+}
+interface IVoar
 {
-    void Voar();
-    int AltitudeMaximaEmMetros { get; set; }
-    double VelocidadeDoVoo { get; set; }
-}
+    public int AltitudeMaximaMetros { get; }
+    double VelocidadeVoo { get; }
 
-public interface IAquatico
+    public void Voar();
+
+}
+interface ICisca
 {
-    bool ViveEmTerra { get; set; }
-    bool Mergulho { get; set; }
-    bool AguaDoce { get; set; }
+    void Ciscar();
 }
 
+interface IAquatico
+{
+    bool ViveEmTerra { get; }
+    bool Mergulho { get; }
+    bool AguaDoce { get; }
+}

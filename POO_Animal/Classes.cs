@@ -1,37 +1,44 @@
-﻿public abstract class animal
+﻿abstract class BaseAnimal
 {
-    public abstract string Nome { get; set; }
-    public abstract DateTime DataDeNascimento { get; set; }
-    public abstract char Sexo { get; set; }
-    public abstract int Idade { get; set; }
-    public bool Carnivoro { get; set; }
-    public bool Peconhento { get; set; }
-    public override void Movimentar() => Console.WriteLine($"{Nome} se movendo!");
-    public override void Comunicar() => Console.WriteLine($"{Nome} se comunicando!");
-    public override  void Alimentar() => Console.WriteLine($"{Nome} se alimentando!");
+    public string Nome { get; set; }
+    public DateTime DataNascimento { get; set; }
+    public char Sexo { get; set; }
+    public abstract bool Carnivoro { get; }
+
+    public int Idade()
+    {
+        return (DateTime.Now - DataNascimento).Days / 365;
+    }
+    public abstract void Movimentar();
+    public abstract void Comunicar();
+    public abstract void Alimentar();
+}
+
+abstract class Mamifero : BaseAnimal
+{
+    public int QtdMamas { get; set; }
+    public bool Pelos { get; set; }
+    public string CorPelo { get; set; }
+    public void Amamentar()
+    {
+
+    }
+}
+
+abstract class Reptil : BaseAnimal
+{
+    public bool TemEscamas
+    {
+        get; set;
+    }
+    public bool TemCasco { get; set; }
 
 
 }
 
-public abstract class mamifero : animal
+abstract class Ave : BaseAnimal
 {
-    public abstract int  QtdeMamaas { get; set; }
-    public abstract bool Pelos { get; set; }
-    public abstract string CorDoPelo { get; set; }
-    public void Amamentar() => Console.WriteLine($"{Nome} amamentando!");
+    public abstract bool Rapina { get; }
+    public string CorPena { get; }
 
 }
-
-
-public abstract class reptil : animal
-{
-    public abstract bool TemEscamas { get; set; }
-    public abstract bool TemCasco { get; set; }
-}
-public abstract class ave : animal
-{
-    public abstract bool Rapina { get; set; }
-    public abstract bool CorPena { get; set; }
-    public void Ciscar() => Console.WriteLine($"{Nome} ciscando!");
-}
-
