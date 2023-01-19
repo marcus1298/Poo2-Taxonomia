@@ -6,9 +6,9 @@
     public abstract int Idade { get; set; }
     public bool Carnivoro { get; set; }
     public bool Peconhento { get; set; }
-    public  void Movimentar() => Console.WriteLine($"{Nome} se movendo!");
-    public  void Comunicar() => Console.WriteLine($"{Nome} se comunicando!");
-    public void Alimentar() => Console.WriteLine($"{Nome} se alimentando!");
+    public override void Movimentar() => Console.WriteLine($"{Nome} se movendo!");
+    public override void Comunicar() => Console.WriteLine($"{Nome} se comunicando!");
+    public override  void Alimentar() => Console.WriteLine($"{Nome} se alimentando!");
 
 
 }
